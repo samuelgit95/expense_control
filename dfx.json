@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "expense_control_backend": {
+      "main": "src/expense_control_backend/main.mo",
+      "type": "motoko"
+    },
+    "expense_control_frontend": {
+      "dependencies": [
+        "expense_control_backend"
+      ],
+      "source": [
+        "src/expense_control_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "expense_control_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
